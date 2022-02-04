@@ -29,7 +29,13 @@ namespace GitTestProject
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Close();
+            DialogResult result = MessageBox.Show(
+                "Вы точно хотите выйти", "Подтверждение выхода", MessageBoxButtons.YesNo,
+                MessageBoxIcon.Information);
+            if(result == DialogResult.Yes)
+            {
+                Close();
+            }
         }
     }
 }
