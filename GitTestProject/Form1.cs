@@ -24,12 +24,12 @@ namespace GitTestProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            BackColor = Color.Aqua;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            Close();
         }
     }
 }
